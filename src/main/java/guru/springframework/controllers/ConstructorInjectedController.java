@@ -9,7 +9,6 @@ public class ConstructorInjectedController {
 
     private GreetingService greetingService;
 
-
     public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
@@ -17,5 +16,4 @@ public class ConstructorInjectedController {
     public String sayHello(){
         return greetingService.sayGreeting();
     }
-
 }
