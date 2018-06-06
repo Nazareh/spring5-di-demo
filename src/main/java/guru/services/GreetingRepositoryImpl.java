@@ -1,8 +1,6 @@
-package guru.springframework.services;
+package guru.services;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 
 @Component
 public class GreetingRepositoryImpl implements GreetingRepository {
