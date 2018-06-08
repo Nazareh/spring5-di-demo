@@ -1,9 +1,6 @@
 package guru.springframework;
 
-import guru.springframework.controllers.ConstructorInjectedController;
 import guru.springframework.controllers.MyController;
-import guru.springframework.controllers.PropertyInjectedController;
-import guru.springframework.controllers.SetterInjectedController;
 import guru.springframework.examplebeans.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
