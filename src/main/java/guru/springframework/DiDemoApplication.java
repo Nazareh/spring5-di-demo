@@ -2,6 +2,7 @@ package guru.springframework;
 
 import guru.springframework.controllers.MyController;
 import guru.springframework.examplebeans.FakeDataSource;
+import guru.springframework.examplebeans.FakeJsmBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -18,6 +19,9 @@ public class DiDemoApplication {
         System.out.println(fakeDataSource.getUsername());
         System.out.println(fakeDataSource.getPassword());
         System.out.println(fakeDataSource.getDburl());
+
+        FakeJsmBroker fakeJsmBroker = applicationContext.getBean(FakeJsmBroker.class);
+        System.out.println(fakeJsmBroker.getUsername());
 
 
 	}
